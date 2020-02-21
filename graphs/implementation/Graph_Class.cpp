@@ -50,6 +50,8 @@ public:
 
             cout << '\n';
         }
+
+        cout<<'\n';
     }
 
 };
