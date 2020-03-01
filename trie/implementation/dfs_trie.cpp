@@ -4,7 +4,6 @@ using namespace std;
 
 struct Node
 {
-
     char data;
     bool isTerminal;
     bool isRoot;
