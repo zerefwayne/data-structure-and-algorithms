@@ -1,3 +1,6 @@
+## Approach 1: Two Pointer O(n^2) time O(1) space
+
+```cpp
 vector<vector<int>> Solution::threeSum(vector<int> &A)
 {
 
@@ -54,3 +57,4 @@ vector<vector<int>> Solution::threeSum(vector<int> &A)
 
     return res;
 }
+```
