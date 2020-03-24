@@ -1,3 +1,8 @@
+[Leetcode Weekly Contest 98 - Tree from Preorder and Postorder](https://leetcode.com/contest/weekly-contest-98/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
+
+## Approach 1: Recursive ACCEPTED
+
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -64,3 +69,5 @@ public:
         return res;
     }
 };
+```
+
