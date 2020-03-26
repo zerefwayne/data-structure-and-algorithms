@@ -1,0 +1,1 @@
+[Question Link](https://leetcode.com/contest/leetcode-weekly-contest-56/problems/find-k-th-smallest-pair-distance/)
