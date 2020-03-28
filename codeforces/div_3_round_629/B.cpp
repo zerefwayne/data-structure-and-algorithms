@@ -2,13 +2,15 @@
 
 using namespace std;
 
+#define ll long long int
+
 int main()
 {
 
-    int t;
+    ll t;
     cin >> t;
-    int n;
-    int k;
+    ll n;
+    ll k;
 
     while (t--)
     {
@@ -16,8 +18,8 @@ int main()
         cin >> n;
         cin >> k;
 
-        int x = 0;
-        int sum = 0;
+        ll x = 0;
+        ll sum = 0;
 
         while (sum < k)
         {
@@ -25,7 +27,7 @@ int main()
             sum = (x * (x + 1)) / 2;
         }
 
-        int one_loc = x - ((sum - k) + 1);
+        ll one_loc = x - ((sum - k) + 1);
 
         string resvec(n, 'a');
 
