@@ -1,3 +1,6 @@
+## Approach 1 Count multiples of 5 on each number
+
+```cpp
 int multiples(int num, int divisor)
 {
     int count = 0;
@@ -21,3 +24,13 @@ int Solution::trailingZeroes(int A)
 
     return fives;
 }
+```
+
+## Approach 2: Recursive Oneliner
+
+```cpp
+int Solution::trailingZeroes(int A)
+{
+    return (A == 0) ? 0 : A/5 + trailingZeroes(A/5);
+}
+```
