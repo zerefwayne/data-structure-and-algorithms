@@ -1,3 +1,17 @@
+Properties of median and counting numbers smaller than a number in a row in O(log n) using upper_bound
+
+1. Median of any array is >= (1 + number of elements)/2
+2. Binary search of an array (upper_bound in C++) can give the number of elements less than the given element
+3. Counting elements lesser than a number takes O(log(cols)) time
+4. Counting for whole matrix takes O(rows * log(cols)) time
+
+Finding the potential median
+
+1. Find the minimum and maximum element, and do a binary search between range [minimum, maximum]
+2. If the number of elements are smaller than the mid element, this means that the median is greater than the mid
+3. because we are counting number of elements **smaller** than the current element.
+
+```cpp
 int Solution::findMedian(vector<vector<int>> &A)
 {
     int rows = A.size();
@@ -44,3 +58,4 @@ int Solution::findMedian(vector<vector<int>> &A)
 
     return min_ele;
 }
+```
