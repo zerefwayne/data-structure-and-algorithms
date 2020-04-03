@@ -11,7 +11,7 @@ vector<int> sieve(int N)
     arr[0] = false;
     arr[1] = false;
 
-    for (int i = 2; i <= N; i++)
+    for (int i = 2; i*i <= N; i++)
     {
 
         if (arr[i] == true)
@@ -19,7 +19,7 @@ vector<int> sieve(int N)
 
             primes.emplace_back(i);
 
-            for (int j = i * 2; j <= N; j += i)
+            for (int j = i * i; j <= N; j += i)
             {
 
                 arr[j] = false;
