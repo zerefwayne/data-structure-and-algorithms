@@ -1,3 +1,6 @@
+## Approach 1: Recursion ACCEPTED
+
+```cpp
 /**
  * Definition for binary tree
  * struct TreeNode {
@@ -18,3 +21,4 @@ int Solution::maxDepth(TreeNode *A)
         return max(maxDepth(A->left), maxDepth(A->right)) + 1;
     }
 }
+```
