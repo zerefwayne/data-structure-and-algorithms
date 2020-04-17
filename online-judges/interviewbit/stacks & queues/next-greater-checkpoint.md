@@ -1,3 +1,4 @@
+```cpp
 vector<int> Solution::nextGreater(vector<int> &A)
 {
 
@@ -42,3 +43,4 @@ vector<int> Solution::nextGreater(vector<int> &A)
 
     return res;
 }
+```
